@@ -12,7 +12,13 @@ const connection = mysql.createConnection({
   password: DB_PASSWORD,
   database: 'finance'
 })
-connection.connect()
+connection.connect((err) => {
+  if (err) {
+    return console.error('error connecting: ' + err.stack);
+  }
+  console.log('connected as id ' + connection.threadId);
+});
+
 
 connection.end()
 

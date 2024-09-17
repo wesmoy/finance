@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev-server": "npx nodemon src/server/server.js",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -17,6 +18,7 @@
     "express": "^4.21.0",
     "framer-motion": "^11.5.4",
     "mysql2": "^3.11.3",
+    "papaparse": "^5.4.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
